@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  start: 2018-05-18
+  end: 2018-05-18
+  content: MyText
+  freez: false
+
+two:
+  title: MyString
+  start: 2018-05-18
+  end: 2018-05-18
+  content: MyText
+  freez: false

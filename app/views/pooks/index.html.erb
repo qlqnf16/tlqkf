@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pooks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Freez</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pooks.each do |pook| %>
+      <tr>
+        <td><%= pook.name %></td>
+        <td><%= pook.freez %></td>
+        <td><%= pook.start %></td>
+        <td><%= pook.end %></td>
+        <td><%= pook.content %></td>
+        <td><%= link_to 'Show', post_pook_path %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pook', new_post_pook_path %>

@@ -1,0 +1,12 @@
+<%= form_tag("/posts/:post_id/pooks", method: "post") do %>
+  <%= label_tag(:name, "이름") %>
+  <%= text_field_tag(:name) %>
+
+  <%= label_tag(:start, "시작") %>
+  <%= datetime_field_tag(:start) %>
+
+  <%= label_tag(:end, "이름") %>
+  <%= datetime_field_tag(:end) %>
+
+  <%= submit_tag("등록") %>
+<% end %>

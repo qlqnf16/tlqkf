@@ -1,0 +1,42 @@
+<%= form_for(bok) do |f| %>
+  <% if bok.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bok.errors.count, "error") %> prohibited this bok from being saved:</h2>
+
+      <ul>
+      <% bok.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :freez %>
+    <%= f.check_box :freez %>
+  </div>
+
+  <div class="field">
+    <%= f.label :start %>
+    <%= f.datetime_select :start %>
+  </div>
+
+  <div class="field">
+    <%= f.label :end %>
+    <%= f.datetime_select :end %>
+  </div>
+
+  <div class="field">
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bok.name %>
+</p>
+
+<p>
+  <strong>Freez:</strong>
+  <%= @bok.freez %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @bok.start %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @bok.end %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @bok.content %>
+</p>
+
+<%= link_to 'Edit', edit_bok_path(@bok) %> |
+<%= link_to 'Back', boks_path %>
